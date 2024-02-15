@@ -48,6 +48,7 @@ a {
   &__inner {
     display: flex;
     gap: 60px;
+    padding-left: 75px;
   }
 
   &__foto {
@@ -58,33 +59,78 @@ a {
     max-width: 530px;
     display: flex;
     flex-direction: column;
-    justify-content: center;      
+    justify-content: center;
+
     &-title {
       font-size: 75px;
       padding-bottom: 75px;
       position: relative;
+
       span {
         font-weight: bold;
-        font-size: 80px;      
-        &::after{
-          content:'';
-          width:150px;
-          height:100px;
+        font-size: 80px;
+
+        &::after {
+          content: '';
+          width: 150px;
+          height: 100px;
           position: absolute;
           background-image: url('../images/underline.svg');
           background-repeat: no-repeat;
-          top:150px;
-          left:0;
+          top: 150px;
+          left: 0;
         }
       }
-      
+
     }
-    &-text{
+
+    &-text {
       padding-bottom: 15px;
     }
-    &-list{
+
+    &-list {
       display: flex;
       gap: 20px;
     }
+  }
+}
+
+.footer {
+  &__inner {
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    &-logo{
+      margin-right: 200px;
+    }
+    &-social {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    &-links {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &-affiliate:hover {
+      color: rgb(17, 141, 168);
+      transition: all 0.1s ease-in-out;
+    }
+
+    &-list {
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+
+
+  &-menu {
+    flex-direction: column;
+    gap: 20px;
+    align-items:flex-start;
   }
 }
