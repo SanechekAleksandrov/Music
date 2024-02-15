@@ -1,11 +1,90 @@
-<<<<<<< HEAD
-body{
-  background-color: blue;
+@import '../css/normalize';
+@import '../css/reset';
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:regular&display=swap");
+
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: rgb(25, 25, 25);
+  color: white;
+  font-size: 22px;
 }
 
-.header{
-  background-image: url(images/header/bg.jpeg);
+a {
+  text-decoration: none;
+  color: inherit;
 }
-=======
 
->>>>>>> c6d0c299e21fce8a574a947831652dd7fcc17796
+.container {
+  max-width: 1440px;
+  padding-right: 70px;
+  padding-left: 50px;
+  margin: 0 auto;
+}
+
+.header-container {
+  padding: 45px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__link:hover {
+    color: rgb(17, 141, 168);
+    transition: all 0.1s ease-in-out;
+  }
+}
+
+.first {
+  padding-top: 60px;
+  padding-bottom: 75px;
+
+  &__inner {
+    display: flex;
+    gap: 60px;
+  }
+
+  &__foto {
+    border-radius: 15px;
+  }
+
+  &__info {
+    max-width: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;      
+    &-title {
+      font-size: 75px;
+      padding-bottom: 75px;
+      position: relative;
+      span {
+        font-weight: bold;
+        font-size: 80px;      
+        &::after{
+          content:'';
+          width:150px;
+          height:100px;
+          position: absolute;
+          background-image: url('../images/underline.svg');
+          background-repeat: no-repeat;
+          top:150px;
+          left:0;
+        }
+      }
+      
+    }
+    &-text{
+      padding-bottom: 15px;
+    }
+    &-list{
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
