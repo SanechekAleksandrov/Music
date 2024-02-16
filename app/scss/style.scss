@@ -15,15 +15,23 @@ a {
   color: inherit;
 }
 
+button{
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
 .container {
   max-width: 1440px;
-  padding-right: 70px;
-  padding-left: 50px;
+  padding: 0 100px;
   margin: 0 auto;
 }
 
 .header-container {
-  padding: 45px 100px;
+  padding-top:45px;
+  padding-bottom: 45px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -69,25 +77,11 @@ a {
       span {
         font-weight: bold;
         font-size: 80px;
-
-        &::after {
-          content: '';
-          width: 150px;
-          height: 100px;
-          position: absolute;
-          background-image: url('../images/underline.svg');
-          background-repeat: no-repeat;
-          top: 150px;
-          left: 0;
-        }
       }
-
     }
-
     &-text {
       padding-bottom: 15px;
     }
-
     &-list {
       display: flex;
       gap: 20px;
@@ -97,7 +91,6 @@ a {
 
 .footer {
   &__inner {
-    padding: 0 50px;
     display: flex;
     justify-content: space-between;
     padding-bottom: 50px;
@@ -126,11 +119,85 @@ a {
     }
   }
 
-
-
   &-menu {
     flex-direction: column;
     gap: 20px;
     align-items:flex-start;
+  }
+}
+
+
+
+.episodes{
+  margin-bottom: 150px;
+}
+
+.episodes__inner{
+  display: flex;
+  flex-direction: column;
+  &-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+  &-text{
+    font-size: 65px;
+    line-height: 80px;
+  }
+  &-button{
+    height:fit-content;
+    padding:15px 12px;
+    border-radius: 6px;
+    background-color: rgb(17, 141, 168);
+    color:white;
+    font-size: 17px;
+    line-height: 27px;
+    align-items: flex-start;
+  }
+  &-news{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    &--card{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap:75px;
+      margin-bottom: 20px;
+      background-color: #000;
+      padding-left:40px;
+      padding-right:60px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      border-radius: 32px;
+    }
+  }
+  &-subtitle{
+    width:fit-content;
+    font-size: 18px;
+    line-height: 27px;
+    border-radius: 6px;
+    background: rgb(25, 25, 25);
+    padding: 0 16px;
+    margin-bottom: 50px;
+  }
+  &-number{
+    font-size: 17px;
+    line-height: 27px;
+    color: rgb(17, 141, 168);
+    margin-bottom: 20px;
+  }
+  &-text--title{
+    font-size: 64px;  
+    line-height: 70px;
+    text-align:left;
+    margin-bottom: 30px;
+  }
+  &-text--text{
+    font-size: 22px;
+    line-height: 33px;
+    color:rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
   }
 }
