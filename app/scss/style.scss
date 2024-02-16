@@ -201,3 +201,42 @@ button{
     margin-bottom: 20px;
   }
 }
+
+.author{
+  margin-bottom: 100px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    &-info{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &-info img{
+      width:115px;
+      height:115px;
+      margin-bottom: 20px;
+    }
+    &-suptitle{
+      font-size: 17px;
+      line-height: 27px;
+      color:rgb(17, 141, 168);
+    }
+    &-title{
+      font-size: 65px;
+      line-height: 80px;
+      margin-bottom: 30px;
+    }
+    &-text{
+      color:rgba(255, 255, 255, 0.7);
+      margin-bottom: 20px;
+      font-size: 22px;
+      line-height: 33px;
+    }
+    &-foto img{
+      border-radius: 15px;
+    }
+
+  }
+}
