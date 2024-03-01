@@ -250,6 +250,11 @@ a {
   color: inherit;
 }
 
+input {
+  border: none;
+  outline: none;
+}
+
 button {
   padding: 0;
   border: none;
@@ -396,7 +401,7 @@ button {
 }
 
 .episodes {
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 }
 
 .episodes__inner {
@@ -498,7 +503,7 @@ button {
 }
 
 .author {
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .author__inner {
   display: -webkit-box;
@@ -544,4 +549,65 @@ button {
 }
 .author__inner-foto img {
   border-radius: 15px;
+}
+
+.form {
+  margin-bottom: 200px;
+}
+.form__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 60px;
+  padding-bottom: 75px;
+  background-color: #000;
+  border-radius: 32px;
+}
+.form__inner-suptitle {
+  color: #118DA8;
+  font-size: 18px;
+}
+.form__inner-title {
+  font-size: 72px;
+  max-width: 430px;
+}
+.form__inner-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 20px;
+}
+.form__inner-form {
+  padding: 25px 20px;
+  background-color: rgb(25, 25, 25);
+  border-radius: 6px;
+  color: #fff;
+  min-width: 400px;
+}
+.form__inner-btn {
+  font-size: 15px;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  border-radius: 6px;
+  background-color: rgb(17, 141, 168);
 }

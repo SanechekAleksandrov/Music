@@ -15,6 +15,11 @@ a {
   color: inherit;
 }
 
+input {
+  border: none; 
+  outline: none;
+}
+
 button{
   padding: 0;
   border: none;
@@ -129,7 +134,7 @@ button{
 
 
 .episodes{
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 }
 
 .episodes__inner{
@@ -203,7 +208,7 @@ button{
 }
 
 .author{
-  margin-bottom: 100px;
+  margin-bottom: 200px;
   &__inner{
     display: flex;
     justify-content: space-between;
@@ -240,3 +245,50 @@ button{
 
   }
 }
+
+.form {
+  margin-bottom:200px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:60px;
+    padding-right:60px;
+    padding-top:60px;
+    padding-bottom:75px;
+    background-color: #000;
+    border-radius: 32px;
+  }
+  &__inner-suptitle {
+    color: #118DA8;
+    font-size: 18px;
+  }
+  &__inner-title {
+    font-size: 72px;
+    max-width:430px;
+  }
+  &__inner-data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap:20px;
+  }
+  &__inner-form {
+    padding: 25px 20px;
+    background-color: rgb(25, 25, 25);
+    border-radius: 6px;
+    color:#fff; 
+    min-width:400px;
+  }
+  &__inner-btn {
+    font-size: 15px;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-radius: 6px;
+    background-color: rgb(17, 141, 168);
+  }
+}
+
