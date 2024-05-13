@@ -401,7 +401,7 @@ button {
 }
 
 .episodes {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .episodes__inner {
@@ -503,7 +503,7 @@ button {
 }
 
 .author {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 .author__inner {
   display: -webkit-box;
@@ -552,7 +552,7 @@ button {
 }
 
 .form {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 .form__inner {
   display: -webkit-box;
@@ -613,7 +613,7 @@ button {
 }
 
 .cards {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 .cards__inner {
   display: grid;
